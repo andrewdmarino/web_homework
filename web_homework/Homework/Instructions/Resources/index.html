@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create four equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* On screens that are 992px wide or less, go from four columns to two columns */
+        @media screen and (max-width: 992px) {
+            .column {
+                width: 50%;
+            }
+        }
+
+        /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Data Views</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">View 1</a></li>
+                        <li><a href="#">View 2</a></li>
+                        <li><a href="#">View 3</a></li>
+                        <li><a href="#">View 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Comparisons</a></li>
+                <li><a href="data_table.html">Data</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="column">
+        <div class="col-md-9" style="background-color:dimgray;">
+            <h1>Weather Data & Analysis </h1>
+            <h2>As We Approach the Equator</h2>
+            <h2>With Visualizations of the dataset</h2>
+        </div>
+    </div>
+    <div class="column2">
+        <div class="col-md-6" style="background-color:white;">:</p>
+            <img src="fig1.png" class="img-responsive" alt="Fig. 1" width="200" height="150">
+            <img src="fig2.png" class="img-responsive" alt="Fig. 2" width="200" height="150">
+            <img src="fig3.png" class="img-responsive" alt="Fig. 3" width="200" height="150">
+            <img src="fig4.png" class="img-responsive" alt="Fig. 4" width="200" height="150">
+        </div>
+    </div>
+
+</body>
+
+</html>
